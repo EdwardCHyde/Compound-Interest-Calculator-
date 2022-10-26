@@ -33,4 +33,4 @@ Learning Resources.
 
 * Item 1 Implement the graph for the compound interest calculator 
 * Item 2 Display each month a payment is made and how much goes towards the principal amount.
-* Item 3 deploy the code to a website.
+* Item 3 Deploy the code to a website.
