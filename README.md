@@ -11,7 +11,7 @@ The software uses two formulas for each calculation, the Compound interest formu
 {Describe your purpose for writing this software.}
 The Purpose of this assessment was to learn how to use JavaScript and HTML together and to make a useful program for everyday use to plan one's finical decisions.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=oLQ8zluD45I)
 
 # Development Environment
 
@@ -31,7 +31,6 @@ Learning Resources.
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Item 1 Implement the graph for the compound interest calculator 
 * Item 2 Display each month a payment is made and how much goes towards the principal amount.
 * Item 3 deploy the code to a website.
