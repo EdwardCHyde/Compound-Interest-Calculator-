@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script src="./test.js" type="module"></script> -->
+    <script type="text/javascript">
+      // import returnRandomNumber from './test';
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // console.log(returnRandomNumber());
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Total Value', 'Future Value '],
+          ['2004',  100,      400],
+          ['2005',  1170,      460],
+          ['2006',  1229,       1120],
+          ['2008',  10190,      30540]
+        ]);
+
+        var options = {
+          title: 'Total Savings',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<body>
+        
+    <h2>Compound Interest Calculator</h2>
+    <div>
+        <label for="rate">Estimated Interest Rate:</label>
+        <input type="number" id="rate" name="rate">
+    </div>
+  
+    <div>
+        <label for="principal">Initial Investment:</label>
+        <input type="number" id="principal" name="principal" size = 10px> 
+    </div>
+    <div>
+        <label for="time">Length of Time in Years:</label>
+        <input type="number" id="time" name="time" size = 10px> 
+    </div>
+  
+    <div>
+        Compound Frequency<select id="number">
+            <option value= "1">Annually</option>
+            <option value= "2">Semiannually</option>
+            <option value= "4">Quarterly</option>
+            <option value= "12">Monthly</option>
+            <option value= "325">Daily</option>
+    </div>
+
+    <div>
+        <input type="button" id="calculateInterest" value="calculate">
+    </div>
+
+    <div>
+        <label for="totalAmount">Total:</label>
+        <output type="number" id="totalAmount" name="totalAmount" disabled>$
+    </div>
+
+
+    <b>Helpful website to show how the end result should work</b>
+    <a href="https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator">investor.gov</a>
+    
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+    <h2>Loan Interest Calculator</h2>
+    <div>
+        <label for="loanAmount">Lone Amount:</label>
+        <input type="number" id="loanAmount" name="loanAmount">
+    </div>
+
+    <div>
+        <label for="loanRate">Lone Rate:</label>
+        <input type="number" id="loanRate" name="loanRate">
+    </div>
+
+    <div>
+        <label for="loanTime">Lone Time In Years:</label>
+        <input type="number" id="loanTime" name="loanTime">
+    </div>
+
+    <div>
+        <input type="button" id="calculateLoan" value="calculate">
+    </div>
+
+    <div>
+        <label for="finalAmount">Total Monthly Payment:</label>
+        <output type="number" id="finalAmount" name="finalAmount" disabled>$
+    </div>
+    <div>
+        <label for="totalInterestAmount">Total Loan Amount With Interest:</label>
+        <output type="number" id="totalInterestAmount" name="totalInterestAmount" disabled>$
+    </div>
+    
+    <script src="Interest.js"></script>
+</body>
+</html>
