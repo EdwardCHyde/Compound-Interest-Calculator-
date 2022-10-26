@@ -1,14 +1,13 @@
 # Compound-Interest-Calculator-
 
 # Overview
-This program does two things 
+This program does two things:
 Projects a retirement plan by taking the initial investment, monthly contribution, length of time in years, and estimated interest rate. 
 Projects the amount one will pay in interest on a loan by taking the loan amount, the interest rate, and the time in years. 
 
-{description of the software}
+Description of the software:
 The software uses two formulas for each calculation, the Compound interest formula and the Loan repayment compound interest formula. This software takes the user input from HTML, reads that input in a JavaScript file, then does the calculations, then sends and displays the output to the HTML side. 
 
-{Describe your purpose for writing this software.}
 The Purpose of this assessment was to learn how to use JavaScript and HTML together and to make a useful program for everyday use to plan one's finical decisions.
 
 [Software Demo Video](https://www.youtube.com/watch?v=oLQ8zluD45I)
